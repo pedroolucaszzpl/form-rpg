@@ -6,5 +6,4 @@ function analisar() {
     document.getElementById("nameex").innerHTML = personagem;
     document.getElementById("classeex").innerHTML = classe;
     document.getElementById("serverex").innerHTML = server;
-    event.preventDefault();
 }
