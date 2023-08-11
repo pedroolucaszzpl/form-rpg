@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="main.js"></script>
+    <title>Formulário</title>
 </head>
 
 <body>
@@ -12,12 +13,11 @@
         <div class="title">
             <h1>Crie seu personagem!</h1>
         </div>
-        <div class="form">
-            <label for="personagem">Personagem:
-                <input type="text" id="name" placeholder="Qual o nome do seu personagem?">
-            </label>
+        <form class="form">
+            <label for="personagem">Personagem:</label>
+                <input type="text" id="name" placeholder="Qual o nome do seu personagem?" required>
             <label for="classe">Classe:
-                <select name="" id="classe">
+                <select name="" id="classe" required>
                     <option value="" disabled selected hidden>Escolha a classe do seu personagem</option>
                     <option value="Sorcerers">Sorcerers</option>
                     <option value="Paladins">Paladins</option>
@@ -26,7 +26,7 @@
                 </select>
             </label>
             <label for="server">Servidor:
-                <select name="" id="server">
+                <select name="" id="server" required>
                     <option value="" disabled selected hidden>Escolha um...</option>
                     <option value="America do Sul">América do Sul</option>
                     <option value="America do Norte">América do Norte</option>
@@ -37,7 +37,7 @@
                 </select>
             </label>
             <label for="cidade">Cidade de Origem:
-                <select name="" id="cidade">
+                <select name="" id="cidade" required>
                     <option value="Ab'Dendriel">Ab'Dendriel</option>
                     <option value="Carlin">Carlin</option>
                     <option value="Kazordoon">Kazordoon</option>
@@ -46,20 +46,20 @@
                 </select>
             </label>
             <label for="email">E-mail:
-                <input type="text" name="email" id="email" placeholder="Digite seu e-mail...">
+                <input type="text" name="email" id="email" placeholder="Digite seu e-mail..." required>
             </label>
             <label for="senha">Senha:
-                <input type="text" name="senha" id="senha" placeholder="Digite uma senha...">
+                <input type="text" name="senha" id="senha" placeholder="Digite uma senha..." required>
             </label>
-        </div>
-        <div class="but">
-            <button onclick="analisar()">Criar Personagem</button>
-        </div>
+            <div class="but">
+                <button type="submit" onclick="analisar()">Criar Personagem</button>
+            </div>
+        </form>
         <div class="exib">
             <h1>Dados do Personagem:</h1>
-            <p id="nameex">Nome:</p>
-            <p id="classeex">Classe:  </p>
-            <p id="servidorex">Servidor:</p>
+            <p>Nome: <span id="nameex"></span></p>
+            <p>Classe: <span id="classeex"></span></p>
+            <p>Servidor: <span id="serverex"></span></p>
         </div>
     </div>
 </body>
