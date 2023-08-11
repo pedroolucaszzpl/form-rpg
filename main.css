@@ -1,0 +1,71 @@
+body {
+    align-items: center;
+}
+label {
+    margin: 510px;
+    line-height: 35px;
+    font-weight: bolder;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+input#name {
+    margin: 5px;
+    padding: 10px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+select#classe {
+    margin: 5px;
+    padding: 12px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+select#server {
+    margin: 5px;
+    padding: 12px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+select#cidade {
+    margin: 5px;
+    padding: 12px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+input#email {
+    margin: 5px;
+    padding: 12px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+input#senha {
+    margin: 5px;
+    padding: 12px;
+   width: 300px;
+   border-radius: 5px;
+   margin-left: 550px;
+}
+
+button {
+    background-color: rgb(54, 54, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    font-size: 16px;
+    margin: 5px;
+    margin-left: 565px;
+   }
